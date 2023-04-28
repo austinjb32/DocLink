@@ -1,0 +1,38 @@
+const mongoose= require('mongoose');
+var productModelSchema= mongoose.Schema({
+    status:{
+        type:String,
+        default:"Active"
+    },
+    name:{
+        type:String
+    },
+    make:{
+        type:String
+    },
+    description:{
+        type:String,
+    },
+    category:{
+        type:String,
+    },
+    price:{
+        type:Number,
+    },
+    quantity:{
+        type:Number,
+    },
+    flavour:{
+        type:String,
+    },
+    ratings:{
+        type:Date,
+    },
+    comments:{
+        type:String,
+    },
+    expiry:{
+        type:Number
+    }
+})
+module.exports=mongoose.model("productModel",productModelSchema);

@@ -1,0 +1,108 @@
+<%- include("partials/header"); -%>
+    <style>
+        /* Add your CSS styles here */
+        .chatbot-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chatbot-header {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .chatbot-messages {
+            height: 400px;
+            overflow-y: scroll;
+        }
+
+        .message {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-right: 10px;
+        }
+
+        .message-text {
+            flex: 1;
+            background-color: #e2f2ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .message-time {
+            color: #999;
+            font-size: 12px;
+        }
+
+        .chatbot-input {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .chatbot-input input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .chatbot-input button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h1>Welcome to DocLink</h1>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message">
+                <div class="messagin">
+                    <img class="message-avatar" src="/playground_assets/robot.png">
+                </div>
+                <div>
+                    <p class="message-text">Hello! How can I assist you?</p>
+                    <span class="message-time">9:00 AM</span>
+                </div>
+            </div>
+            <div class="message">
+                <div class="message-ava">
+                    <img class="message-avatar" src="/playground_assets/robot.png">
+                </div>
+                <div>
+                    <p class="message-text">I'm here to answer any questions you may have.</p>
+                    <span class="message-time">9:02 AM</span>
+                </div>
+            </div>
+            <!-- Add more message elements as needed -->
+        </div>
+        <form method="post" action="/chat"></form>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+    </div>
+</body>
+<%- include("partials/footer"); -%>

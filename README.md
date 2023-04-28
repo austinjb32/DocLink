@@ -1,4 +1,5 @@
 # DocLink
+
 Idea Abstract:
 DocLink is a medical chat web app which is designed to assist users in identifying symptoms and receiving medical advice and treatment recommendations. This web app includes features such as medicine prescription, symptom identification, and access to medical professionals.
 
