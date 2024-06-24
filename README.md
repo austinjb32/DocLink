@@ -6,10 +6,10 @@ DocLink is a medical chat web app which is designed to assist users in identifyi
 Team Leader Name: Austin Jacob 
 
 Team Members:
-1.     Austin Jacob
-2.     Reejo Kuriakose
-3.     Sheryl Varghese
-4.     Jeffy Shiju
+1.     Austin Jacob -Mechanical Engineer
+2.     Reejo Kuriakose -Computer Science Engineer
+3.     Sheryl Varghese- Electronics Engineer
+4.     Jeffy Shiju -Computer Science Engineer
 
 Problems to being solved:
 
